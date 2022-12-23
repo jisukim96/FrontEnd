@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{ margin:0; padding:0;}    /*margin,padding 을 0으로 두는 걸로 작업 시작*/
+        p { width : 400px; height: 50px; border : 1px solid red;}
+        .b1{
+            position: absolute;         /*기존 박스위치 없애고 ,다른 박스의 위치도 조정하고 싶으면 absolute*/
+            top: 50px; left: 100px;     /*기존 박스위치 그대로 두고 ,다른 박스는 이동하지 않게 - relative*/
+        }
+        .b2{
+            position: absolute;         /*absolute 같은 위치면 겹쳐져서 나옴*/
+            top: 52px; left: 102px;}
+        .b3{
+            position: relative;         
+            top: 30px; left: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 절대 위치 적용 :
+            기준점 : top 0, left 0 <= 좌표의 왼쪽 최상단이 기준점-->
+
+    <h1> Position Style 3 - Absolute Position </h1>
+    <p class = "b1"> 절대 위치 설정 적용 1</p>
+    <p class = "b2"> 절대 위치 설정 적용 2</p>
+    <p class = "b3"> 상대 위치 설정 적용 1</p>
+
+</body>
+</html>
