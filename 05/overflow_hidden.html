@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 100px;
+            height: 20px;
+            overflow: hidden;   /*overflow : hidden  박스 범위 밖의 내용은 출력되지 않도록 설정*/
+        }
+    </style>
+</head>
+<body>
+    <div class = d1>
+        StringTokenizer 클래스는 문자열을 우리가 지정한 구분자로 문자열을 쪼개주는 클래스입니다. 그렇게 쪼개어진 문자열을 우리는 토큰(token)이라고 부릅니다.
+
+
+        StringTokenizer를 사용하기 위해서는 java.util.StringTokenizer를 import해야합니다. 사용법은 굉장히 쉽습니다. 사용하는 메소드도 몇개 없는데요. 자주 사용하는 메소드 설명과 예제를 통해 이 클래스를 어떻게 사용하는지 살펴봅시다. 
+
+        int countTokens() 
+
+        남아있는 token의 개수를 반환합니다. 전체 token의 갯수가 아닌 현재 남아있는 token 개수입니다.
+        
+         
+        
+        boolean hasMoreElements(), boolean hasMoreTokens()
+        
+        다음의 token을 반환합니다. StringTokenizer는 내부적으로 어떤 위치의 토큰을 사용하였는지 기억하고 있고 그 위치를 다음으로 옮깁니다. 두가지 메소드는 모두 같은 값을 반환합니다.
+        
+         
+        
+        Object nextElement(), String nextToken()
+        
+        이 두가지 메소드는 다음의 토큰을 반환합니다. 두가지 메소드는 같은 객체를 반환하는데 반환형은 다르네요. nextElement는 Object를, nextToken은 String을 반환하고 있습니다.
+
+    </div>
+</body>
+</html>
