@@ -1,0 +1,16 @@
+
+        #footer{ padding: 0 15px 0 200px ;
+            border-top: 2px solid lightgray;}
+
+        #footer div{margin: 0 auto;
+            display: inline-block;
+            }
+
+        #addr{font-size: 13px;
+                padding-left: 50px;}
+
+        #social{float: right;}
+
+        #social li{float: left;
+        padding: 2px;
+        margin-top: 20px;}

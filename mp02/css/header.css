@@ -1,0 +1,28 @@
+*{padding: 0; margin: 0; font-family: "맑은 고딕","돋움";}
+
+        #page{width: 970px; margin: 0 auto;}
+            
+        ul{list-style-type: none;}
+             
+        header{ height: 100px; position: relative;
+            margin-bottom: 20px;}
+
+        #logo{ margin : 10px 0 0 15px; position: absolute;}
+
+        #home{text-align: right;
+            margin: 10px 0 0 720px;
+            position: absolute;}    
+
+        #main_menu{float: right;
+            background-image: url(./img/main_menu_bg.png);
+            background-repeat: no-repeat;
+            text-align: right; 
+            width: 750px;
+            height: 40px;    
+            margin: 45px 2px 0 0px;}
+
+        #main_menu li{display: inline-block;
+            margin: 12px 30px 0 45px;
+            font-size: 14px;}
+
+        #main_menu a{ text-decoration: none; color: white;}

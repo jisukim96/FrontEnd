@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+    <style>
+        *{padding: 0; margin: 0; font-family: "맑은 고딕","돋움";}
+
+        #page{width: 970px; margin: 0 auto;}
+            
+        ul{list-style-type: none;}
+             
+        header{ height: 100px; position: relative;
+            margin-bottom: 20px;}
+
+        #logo{ margin : 10px 0 0 15px; position: absolute;}
+
+        #home{text-align: right;
+            margin: 10px 0 0 720px;
+            position: absolute;}    
+
+        #main_menu{float: right;
+            background-image: url(./img/main_menu_bg.png);
+            background-repeat: no-repeat;
+            text-align: right; 
+            width: 750px;
+            height: 40px;    
+            margin: 45px 2px 0 0px;}
+
+        #main_menu li{display: inline-block;
+            margin: 12px 30px 0 45px;
+            font-size: 14px;}
+
+        #main_menu a{ text-decoration: none; color: white;}
+        
+        #login{border: 1px solid lightgray; 
+            padding: 10px; width: 190px;
+            background-color:whitesmoke;
+            border-radius: 15px;}
+
+        #id_pass{
+            float: left;
+            padding: 10px 5px 5px 0;
+            margin: 0px; }
+        
+        #id_pass input{
+            display: inline-block;
+            margin: 1px;
+            width: 110px;
+            vertical-align: middle;}
+
+        #login_btn{
+            margin: 10px 0 12px 0;
+            vertical-align: middle; }
+
+        #id_pass, #login_btn { display: inline-block;} 
+
+        #btns li{ display: inline;}
+
+        #sub_menu{width: 200px;
+            margin: 15px 0 15px ;
+            padding: 0px;
+            background-image:url(img/sub_menu_bg.png);
+            background-repeat: no-repeat;
+            height: 320px;
+        }    
+
+        #sub_menu ul{ padding: 80px 0 0 15px; font-size: 15px;}
+
+        #sub_menu li{ margin: 10px;}
+
+        #sub_menu a{text-decoration: none; color: black;}
+
+        #banner{border: 1px solid lightgrey;
+        width: 200px; margin: 10px 0 0 0;
+        border-radius: 15px;}
+
+        #banner ul{ padding: 5px 0 0 5px;}
+        
+        #title{ margin-top: 20px; padding: 0 0 10px 0;}
+        
+        #write_area{
+            text-align: center;
+            background-color: rgba(211, 211, 211, 0.37);
+            border-top: 2px solid rgba(0, 0, 0, 0.589);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+            padding: 10px;
+            height: 20px;
+        }
+        main table{ width: 80%;}
+
+        aside{ 
+            padding: 0px;
+            width: 202px;
+            float: left;}
+
+        main{ margin-left: 23%;}
+
+        main table{
+            width: 100%;
+            margin: 0 auto;}
+
+        #left {float: left;
+        font-weight: lighter;
+        font-size: 13px;}    
+
+        #right {float: right;
+        font-weight: lighter;
+        font-size: 13px;} 
+         
+       .cel1 { 
+            border-bottom: 2px solid lightgray;
+            border-right: 2px solid lightgray;
+            background-color: rgba(211, 211, 211, 0.37);
+            width: 200px;
+            font-size: 14px;
+            text-align: center;}
+
+        #img1 {float: left;
+                padding: 10px 5px 0 10px;}   
+        #img2 { padding: 10px;} 
+
+       .cel2 {
+            border-bottom: 2px solid lightgray;
+            padding: 5px;}
+
+        #main textarea{margin: 5px;}
+
+        p {font-size: 12px;}
+        #ok_list{  padding: 20px 0 110px 550px;}
+        
+        #footer{ padding: 0 15px 0 200px ;
+            border-top: 2px solid lightgray;}
+
+        #footer div{margin: 0 auto;
+            display: inline-block;
+            }
+
+        #addr{font-size: 13px;
+                padding-left: 50px;}
+
+        #social{float: right;}
+
+        #social li{float: left;
+        padding: 2px;
+        margin-top: 20px;}
+
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div id="logo"><img src="./img/logo.png" width="200px"></div>
+            
+            <p id="home">HOME | LOGIN | JOIN | NOTICE</p>
+        
+            <ul id="main_menu">   
+                <li><a href="board_list.html">자유 게시판</a></li>
+                <li><a href="#">기타 연주</a></li>
+                <li><a href="#">공동 구매</a></li>
+                <li><a href="#">연주회 안내</a></li>
+                <li><a href="#">회원 게시판</a></li>
+            </ul>
+        
+        </header>
+           
+        <aside>
+            <nav id="login">
+                <div><img src="img/ttl_login.png" style="height: 20px;"></div>
+                <ul id="input_button">
+                    <li id="id_pass">
+                        <ul>
+                            <li>
+                                <input type="text" name="id">
+                            </li>
+                            <li>
+                                <input type="text" name="pwd">
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="login_btn">
+                        <img src="img/btn_login.gif">
+                    </li>
+                </ul>
+                <ul id="btns">
+                    <li><img src="img/btn_join.gif"></li>
+                    <li><img src="img/btn_search.gif"></li>
+
+                </ul>
+            </nav>
+            <nav id="sub_menu">
+                <ul>
+                    <li><a href="board_list.html">+ 자유 게시판</a></li>
+                    <li><a href="#"> + 방명록 </a></li>
+                    <li><a href="#"> + 공지사항 </a></li>
+                    <li><a href="#"> + 등업요청 </a></li>
+                    <li><a href="#"> + 포토갤러리 </a></li>
+                </ul>
+            </nav>
+            <nav id = "banner">
+                <ul>
+                    <li><img src="img/banner1.png"></li>
+                    <li><img src="img/banner2.png"></li>
+                    <li><img src="img/banner3.png"></li>
+                </ul>
+
+            </nav>
+        </aside>
+
+        <main>
+            <section id="main">
+                <img src="img/comm.gif">
+                <h3 id="title">자유 게시판</h3>
+                <div id="write_area"><h5 id="left">까스릉님의 선물인 보드카가 정말 독하네요!!!</h5>
+                                    <h5 id="right">루바토 | 조회 : 208 | 2016-04-28 (09:20)</h5></div>
+                <table>
+                    <tr>
+                        <td class="cel2" style="height: 100px;">
+                            <p>까스룽님 고맙습니다.<br></p>
+                            <p>까스룽님 고맙습니다.<br></p>
+                            <p>까스룽님 고맙습니다.<br></p>
+                            <p>까스룽님 고맙습니다.<br></p>
+                            <p>까스룽님 고맙습니다.<br></p>
+                        </td></tr>
+                    <tr>
+                        <td class="cel1"><img id="img1" src="img/title_comment.gif">
+                        <textarea style="width: 500px; height: 70px;" ></textarea><img id="img2" src="img/ok_ripple.gif"></td>
+                    </tr>
+
+                    </tr>
+                </table>
+                <div id="ok_list">
+                    <img src="img/delete.png">
+                    <img src="img/list.png">
+                    <img src="img/write.png">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="footer">
+                <div><img src="img/logo_footer.gif"></div>
+                <div id="addr">서울시 강남구 삼성동 1234 우 : 123-1234<br>
+                                TEL : 031-123-1234 Email : email@domain.com<br>
+                                COPYRIGHT © 루바토 ALL RIGHTS RESERVED</div>
+                <div id="social"><ul>
+                    <li><img src="img/facebook.gif"></li>
+                    <li><img src="img/blog.gif"></li>
+                    <li><img src="img/twitter.gif"></li>
+                </ul></div>
+            </div>
+        </footer>
+    </div><!--page-->
+</body>
+</html>
