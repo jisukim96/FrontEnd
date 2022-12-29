@@ -1,0 +1,38 @@
+#sec1{width: 750px;
+    margin-left: 20px;
+    border-top: 1px solid black;
+    display: inline-block}
+#title1 {margin: 20px 0 5px 220px; }
+#sec1_img{padding-top: 15px; width: 340px; float: left;}
+#sec1_btnnp{padding: 10px 0 0 70px; }
+#pro_info{ margin: 15px 0 0 355px;  border-bottom: 1px solid #cccccc;}
+#pro_info h2{padding-bottom: 10px ;}
+#info_tb1{width: 100%; padding: 10px; border-top: 1px solid black; border-bottom: 1px solid #cccccc;}
+#info_tb1 tr{height: 30px;}
+#tb1_td1{width: 100px;}
+#info_tb2{padding: 10px;}
+#info_tb2 tr{height: 30px;}    
+#tb2_td1{width: 100px;}
+#buy{float: right; margin-top: 15px;}   /*sec1*/
+
+#sec2{width: 750px;
+    margin-left: 20px;
+    display: inline-block;
+    padding : 5px;
+}
+#sec2 h3{margin: 5px; }
+#sec2 #ment{padding: 15px; border-top: 1px solid black;font-size: 16px; font-weight: bolder;}    
+#pro_expl{width: 720px; height: 230px; margin: 20px 0 0 20px;
+        border: 1px solid black; background-color: white;}
+#pro_expl ul { padding: 15px 0 0 20px; font-size: 14px;}
+#pro_expl li { width: 670px; padding: 8px; border-bottom: 1px solid #cccccc;}
+#pro_expl .c1{float: left; width: 80px;}
+#pro_expl .c2{float: left;}
+#clear{clear: both;}
+
+#sec3{width: 750px;
+    margin-left: 220px;
+    display: inline-block;
+    padding : 15px;}
+#sec3 h3{margin: 5px;}
+#warn{border-top: 1px solid black;font-size: 14px; padding: 20px;}

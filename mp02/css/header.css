@@ -14,7 +14,7 @@
             position: absolute;}    
 
         #main_menu{float: right;
-            background-image: url(./img/main_menu_bg.png);
+            background-image: url(../img/main_menu_bg.png);
             background-repeat: no-repeat;
             text-align: right; 
             width: 750px;

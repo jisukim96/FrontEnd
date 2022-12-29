@@ -8,7 +8,7 @@
     <style>
         *{padding: 0; margin: 0; font-family: "맑은 고딕","돋움";}
 
-        #page{width: 970px; margin: 0 auto;}
+        #page{width: 1000px; margin: 0 auto;}
             
         ul{list-style-type: none;}
              
@@ -102,35 +102,45 @@
             width: 100%;
             margin: 0 auto;}
 
+        table tr{height: 30px;}
+
+        table td{border-bottom: 2px solid lightgray;
+            font-size: 13px;}
+
+        table a{text-decoration: none;
+                color: black;}  
+
+        #num,#writter,#date,#count { text-align: center;}
+
         #left {float: left;
-        font-weight: lighter;
-        font-size: 13px;}    
+                font-weight: lighter;
+                font-size: 13px;
+                padding: 2px;}    
 
-        #right {float: right;
-        font-weight: lighter;
-        font-size: 13px;} 
+        #right {float: right;} 
          
-       .cel1 { 
+       
+       #search {
+            border-top: 2px solid lightgray;
             border-bottom: 2px solid lightgray;
-            border-right: 2px solid lightgray;
+            margin: 5px; padding: 5px;
+            height: 30px;}
+
+        #line{padding-bottom: 5px;
+            border-top: 2px solid black;
             background-color: rgba(211, 211, 211, 0.37);
-            width: 200px;
-            font-size: 14px;
-            text-align: center;}
+            border-collapse: collapse;}
 
-        #img1 {float: left;
-                padding: 10px 5px 0 10px;}   
-        #img2 { padding: 10px;} 
+        #next {
+            text-align: center;
+            margin-top: 30px;
 
-       .cel2 {
-            border-bottom: 2px solid lightgray;
-            padding: 5px;}
-
-        #main textarea{margin: 5px;}
-
-        p {font-size: 12px;}
-        #ok_list{  padding: 20px 0 110px 600px;}
+        }    
+        #ok_list{ 
+             text-align: right;
+            margin-bottom: 200px;}
         
+
         #footer{ padding: 0 15px 0 200px ;
             border-top: 2px solid lightgray;}
 
@@ -146,6 +156,7 @@
         #social li{float: left;
         padding: 2px;
         margin-top: 20px;}
+
 
     </style>
 </head>
@@ -213,7 +224,8 @@
             <section id="main">
                 <img src="img/comm.gif">
                 <h3 id="title">자유 게시판</h3>
-                <div>
+
+                <div id="search">
                     <div id="left">▷ 총 5개의 게시물이 있습니다.</div>
 
                     <div id="right"><img src="img/select_search.gif">
@@ -225,22 +237,26 @@
                     <img src="img/search_button.gif"></div>
                 </div>
 
+                <div>
                 <table>
-                   <tr><td id="num">번호</td><td id="tit">제목</td><td id="writter">글쓴이</td><td id="date">일시</td><td id="count">조회수</td></tr>
-                   <tr><td id="num">1</td><td id="tit">까스릉님의 선물인 보드카가 정말 독하네요!!!!</td><td id="writter">루바토</td><td id="date">2019-09-20</td><td id="count">15</td></tr>
-                   <tr><td id="num">2</td><td id="tit">까스릉님의 선물인 보드카가 정말 독하네요!!!!</td><td id="writter">루바토</td><td id="date">2019-09-20</td><td id="count">15</td></tr>
-                   <tr><td id="num">3</td><td id="tit">까스릉님의 선물인 보드카가 정말 독하네요!!!!</td><td id="writter">루바토</td><td id="date">2019-09-20</td><td id="count">15</td></tr>
+                   <tr id="line" align="center"><td id="num">번호</td><td id="tit">제목</td><td id="writter">글쓴이</td><td id="date">일시</td><td id="count">조회수</td></tr>
+                   <tr><td id="num">1</td><td id="tit"><a href="board_view.html">까스릉님의 선물인 보드카가 정말 독하네요!!!!</a></td>
+                    <td id="writter">루바토</td><td id="date">2019-09-20</td><td id="count">15</td></tr>
+                   <tr><td id="num">2</td><td id="tit"><a href="board_view.html">까스릉님의 선물인 보드카가 정말 독하네요!!!!</a></td>
+                    <td id="writter">루바토</td><td id="date">2019-09-20</td><td id="count">15</td></tr>
+                   <tr><td id="num">3</td><td id="tit"><a href="board_view.html">까스릉님의 선물인 보드카가 정말 독하네요!!!!</a></td>
+                    <td id="writter">루바토</td><td id="date">2019-09-20</td><td id="count">15</td></tr>
                    </tr>
                 </table>
                 </div>
-
-                <div>"◀ 이전 1 다음 ▶"></div>
+                
+                <div id="next">◀ 이전 1 다음 ▶</div>
 
                 <div id="ok_list">
                     <img src="img/list.png">
                     <img src="img/write.png">
                 </div>
-
+                
             </section>
         </main>
 
@@ -257,6 +273,7 @@
                 </ul></div>
             </div>
         </footer>
+        
     </div><!--page-->
 </body>
 </html>

@@ -1,0 +1,38 @@
+*{padding: 0; margin: 0;}
+body{font-family: "sans-serif"; font-size: 12px; background-color: #f2f0f0;}
+#page{width: 1000px; margin: 0 auto;}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+header {height: 130px; }
+header section{width: 990px;}    
+#logo{float: left; margin-top: 20px;}
+
+#search {float: left; margin: 40px 0 0 150px;}        /*서치*/
+    
+#search div{float: left; margin-right: 5px;}
+#search p{color: #96c11f; font-size: 15px;}
+#search input{background-color: #f2f0f0;
+            border: 0px;
+            border-bottom: 1px solid #cccccc;
+            width: 100px;}
+#search img{margin: 3px; float: left;}
+
+.green a{color: #96c11f !important;}                /*로그인 회원가입 ...*/
+#login a{color: black;}
+#login li{float: left;
+          margin: 10px;}    
+
+#login{ margin-top:35px ; float: right;}
+#menu li{float: left;                                   /* 상단 메뉴바*/
+        font-size: 14px;}
+
+#menu{  height: 40px;
+        margin-top: 15px;
+        background-color: #4e4c4d;}
+#menu ul{width: 990px;
+        margin: 0 auto;
+        padding-top: 12px;
+        text-align: center;}
+#menu li{display: inline; margin: 0 57px 0 57px ;}
+#menu a{color: white;}

@@ -1,0 +1,21 @@
+main section{margin: 20px; 
+    margin-left: 220px;}
+#sub_title{font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;}
+#sec_img{padding: 20px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid olivedrab;}
+#sec_tb1{width: 100%; border: 1px solid #cccccc;}
+#sec_tb1 tr{border-collapse: collapse;}
+#sec_tb1 td{border-bottom: 1px solid #cccccc;
+text-align: center;}
+#sec_tb1 .name{ text-align: left;}
+#tr1{height: 40px; background-color: gainsboro;}
+#tr2{width: 100%; 
+padding: 20px 10px 20px 10px; 
+border: 1px solid #cccccc; 
+background-color: gainsboro;}
+#tr2  .tr2_td {text-align: right;}
+#order_button{text-align: center;
+        margin-top: 20px;}

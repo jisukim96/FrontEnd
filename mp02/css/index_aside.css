@@ -1,0 +1,32 @@
+#login{border: 1px solid lightgray; 
+    padding: 10px; width: 190px;
+    background-color:whitesmoke;
+    border-radius: 15px;}
+
+#id_pass{
+    float: left;
+    padding: 10px 5px 5px 0;
+    margin: 0px; }
+
+#id_pass input{
+    display: inline-block;
+    margin: 1px;
+    width: 110px;
+    vertical-align: middle;}
+
+#login_btn{
+    margin: 10px 0 12px 0;
+    vertical-align: middle; }
+
+#id_pass, #login_btn { display: inline-block;} 
+
+#btns li{ display: inline;}
+
+#memo{border: 1px solid lightgray; 
+    padding: 10px; width: 190px;
+    background-color:whitesmoke;
+    border-radius: 15px; margin-top: 20px;}   
+#memo ul{border-top : 1px solid #cccccc;}
+#memo li{list-style-type: disc;
+    list-style-image: url(../img/icon_blue.gif);
+    font-size: 12px; margin-top: 5px; margin-left: 25px;}

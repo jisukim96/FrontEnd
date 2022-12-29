@@ -1,0 +1,13 @@
+#side_menu{width: 200px;  margin-top: 15px ;
+    float: left;}
+#side_menu #green{
+        background-color: #96c11f; 
+        text-align: center; font-size: 14px;
+        padding: 12px; color: white;
+        font-weight: bolder;}
+#side_menu li{padding: 10px 0 10px 30px;
+border: 1px solid #cccccc;
+border-top: 0 ;}    
+
+#cus{margin-top: 12px; border: 1px solid #cccccc; padding:0}    
+#cus img{display: block; overflow: hidden;}

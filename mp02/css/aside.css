@@ -1,0 +1,43 @@
+#login{border: 1px solid lightgray; 
+    padding: 10px; width: 190px;
+    background-color:whitesmoke;
+    border-radius: 15px;}
+
+#id_pass{
+    float: left;
+    padding: 10px 5px 5px 0;
+    margin: 0px; }
+
+#id_pass input{
+    display: inline-block;
+    margin: 1px;
+    width: 110px;
+    vertical-align: middle;}
+
+#login_btn{
+    margin: 10px 0 12px 0;
+    vertical-align: middle; }
+
+#id_pass, #login_btn { display: inline-block;} 
+
+#btns li{ display: inline;}
+
+#sub_menu{width: 200px;
+    margin: 15px 0 15px ;
+    padding: 0px;
+    background-image:url(../img/sub_menu_bg.png);
+    background-repeat: no-repeat;
+    height: 320px;
+}    
+
+#sub_menu ul{ padding: 80px 0 0 15px; font-size: 15px;}
+
+#sub_menu li{ margin: 10px;}
+
+#sub_menu a{text-decoration: none; color: black;}
+
+#banner{border: 1px solid lightgrey;
+width: 200px; margin: 10px 0 0 0;
+border-radius: 15px;}
+
+#banner ul{ padding: 5px 0 0 5px;}
