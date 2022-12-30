@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0; padding: 0;}
+        #bs {
+        padding: 15px;    
+        width: 1500px; height: 380px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba(211, 211, 211, 0.24);
+
+        }
+        .sq2 ,.sq3{ margin: 25px;
+            border-radius: 20px;
+            border: 3px solid rgb(100, 204, 245);
+            background-color: white;
+            width: 30%; }
+        
+        .sq1 { margin: 25px;
+            border-radius: 20px;
+            background-color: white;
+            width: 30%; }
+
+         .sq2 img , .sq3 img{
+            float: left; 
+        }
+        .sq1 img {  float: left; }
+        .t1{margin: 0; margin-top: 70px; font-size: 23px; font-weight: bolder; margin-right: 15px;}
+        .t2{font-weight: bolder; color: rgb(83, 82, 82); margin-right: 15px; line-height: 25px;}
+
+    </style>
+</head>
+<body>
+    <div id="bs">
+    <div class="sq1">
+        <img src="img/fox-in-suit.png" height="320px">
+        <p class="t1">모든 웹사이트를 누가 호스팅하는지 찾으십시오</p>
+        <p class="t2">웹사이트의 URL을 입력하여 어떤 호스팅 서비스를 사용하는지 알아보십시오</p>
+    </div>
+    <div class="sq2">
+        <img src="img/fox-with-horn.png" height="280px">
+        <p class="t1">시장 점유율 2021</p>
+        <p class="t2">국가별로 나뉜 각 호스팅 회사의 2021 시장 점유율을 살펴보십시오</p>
+    </div>
+    <div class="sq3">
+        <img src="img/fox-with-server.png" height="280px">
+        <p class="t1">웹 호스팅의 일대일 비교</p>
+        <p class="t2">3개까지의 웹 호스팅 회사를 간단히 비교하고 어느 것이 더 나은지 보십시오</p>
+    </div>
+    </div>
+</body>
+</html>

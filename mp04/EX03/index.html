@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        body{width: 100%px; margin: 0 auto; font-size: 100%;}
+        header{height: 35px; background-color: skyblue; color: white; text-align: center; padding: 20px; font-size: 30px; font-weight: bolder;}
+        nav{background-color: rgb(203, 189, 216); width: 100%; float: left;}
+        nav a{text-decoration: none; color: white;}
+        nav li{float: left; list-style-type: none;margin: 10px 40px 10px 40px; font-size: 15px; } 
+        section{width: 100%; background-color: rgba(173, 216, 230, 0.527); padding: 80px 0 80px 0;  }
+        section h1{margin-bottom: 20px;text-align: center;}
+        #tb {margin-left: 50px; font-weight: bolder; }
+        #tb td{width: 400px;}
+        .d2 input{width: 250px;}
+        #tb .d1{text-align: center;}
+        footer {background:radial-gradient(rgb(155, 79, 123),rgb(57, 39, 153)) ; height: 45px; 
+            padding-top: 20px; text-align: center;color: white; padding-bottom: 10px;}
+        
+        @media only screen and ( max-width : 600px ) {
+        
+            nav li{ float: none; }
+            #tb td {float: left;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        쇼핑몰 회원관리 VER 1.0
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">회원등록</a></li>
+            <li><a href="#">회원목록조회/수정</a></li>
+            <li><a href="#">회원매출조회</a></li>
+            <li><a href="#">홈으로</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>쇼핑몰 회원 등록</h1>
+            <table id="tb" border="1">
+                <tr><td class="d1">회원번호(자동발생)</td><td class="d2"><input type="text" style="border-radius: 5px;"></td></tr>
+                <tr><td class="d1">회원성명</td><td class="d2"><input type="text" style="border-radius: 5px;"></td></tr>
+                <tr><td class="d1">회원주소</td><td class="d2"><input type="text" style="border-radius: 5px;"></td></tr>
+                <tr><td class="d1">가입일자</td><td class="d2"><input type="text" style="border-radius: 5px;"></td></tr>
+                <tr><td class="d1">고객등급[A:VIP,B:일반,C:직원]</td><td class="d2"><input type="text" style="border-radius: 5px;"></td></tr>
+                <tr><td class="d1">도시코드</td><td class="d2"><input type="text" style="border-radius: 5px;"></td></tr>
+                <tr align="center"><td colspan="2"><input type="button" value="등록">&nbsp;<input type="button" value="조회"></tr></tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>HRDKOREA Copyright©2016 All rights reserve, Human Resources Development Service of Korea</p>
+    </footer>
+</body>
+</html>
