@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var day;
+        var week=new Date().getDay(); // 0(일요일)~6(토요일) 
+        switch(week) {
+        case 0:
+        day="일요일"; break;
+        case 1:
+        day="월요일"; break;
+        case 2:
+        day="화요일"; break;
+        case 3:
+        day="수요일"; break;
+        case 4:
+        day="목요일"; break;
+        case 5:
+        day="금요일"; break;
+        case 6:
+        day="토요일"; break;
+        default:
+        day="없는 요일";
+        }   //오늘은 월요일 입니다.
+        document.write("오늘은 <b>" + day + "</b>입니다. <p/>");    //getday() 요일을 구하는 함수 - int 타입을 리턴한다.(일 월 화 수 목 금 토 순서)
+        document.write(week);   //1
+        </script>
+        <script>
+            var day;
+            var week = new Date().getDay();
+            switch(week){
+                case 0:day="일요일"; break;
+                case 1:day="월요일"; break;
+                case 2:day="화요일"; break;
+                case 3:day="수요일"; break;
+                case 4:day="목요일"; break;
+                case 5:day="금요일"; break;
+                case 6:day="토요일"; break;
+                default:day="없는 요일";
+            } 
+            document.write("오늘의 요일은"+day+"입니다.");
+        </script>
+</body>
+</html>

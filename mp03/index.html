@@ -6,8 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel = "stylesheet" type="text/css" href="css/header.css">
-    <link rel = "stylesheet" type="text/css" href="css/aside.css">
     <link rel = "stylesheet" type="text/css" href="css/footer.css">
+    <style>
+        *{margin: 0; padding: 0;
+            font-family: "돋움";}
+        body{margin: 0 auto;}
+        #sec1{width: 200px;  float: left;}
+        #sec1 #green{
+                background-color: #96c11f; 
+                text-align: center; font-size: 14px;
+                padding: 12px; color: white;
+                font-weight: bolder;}
+        #sec1 li{padding: 10px 0 10px 30px;
+                border: 1px solid #cccccc;
+                border-top: 0 ;}  
+        #main_img{height: 350px; float: left;}        
+        #sec3{margin-top: 15px; margin-left: 723px; 
+                border: 1px solid red ;
+                height: 380px;}
+        
+        #notice{background-image:url(img/latest_notice.gif); background-repeat: no-repeat;
+                padding-top: 25px; width: 236px; border: 1px solid #cccccc; margin-bottom: 10px; }
+        #notice ul{ list-style-image: url(img/blue_dot.gif); 
+                    z-index: 30; margin:15px 0 15px 25px;}
+        #event {background-image: url(img/week_event.gif) ; background-repeat: no-repeat;
+            border: 1px solid #cccccc; width: 236px;}
+
+    </style>
 </head>
 <body>
     <div id="page">
@@ -44,8 +69,8 @@
             </section>
         </header>
 
-        <aside>
-            <section id="side_menu">
+        <main>
+            <section id="sec1">
             <div id="green">CATEGORY ITEM</div>
             <ul>
                 <li>생활 아트</li>
@@ -60,12 +85,27 @@
             </ul>
             
             </section>
-        </aside>
-
-        <main>
-            <section id="sec1">
-                <img src="img/main_img.gif">
                 
+            <section id="sec2">
+                <img id="main_img" src="img/main_img.gif">
+            </section>
+
+            <section id="sec3">
+                <div>
+                    <div id="notice">
+                        <ul>
+                            <li>폭설로 인한 배송지연 안내</li>
+                            <li>폭설로 인한 배송지연 안내</li>
+                            <li>폭설로 인한 배송지연 안내</li>
+                            <li>폭설로 인한 배송지연 안내</li>
+                            <li>폭설로 인한 배송지연 안내</li>
+                            <li>폭설로 인한 배송지연 안내</li>
+                        </ul>
+                    </div>
+                    <div id="event">
+                        <img src="img/week_event_img.gif">
+                    </div>
+                </div>
             </section>
         </main>
 
