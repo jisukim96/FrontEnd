@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 두 수를 인풋받아 더해서 리턴해주는 함수 
+        서로 다른 변수로 같은 함수의 반환값 출력 -->
+    <script>
+        function add (x,y){
+            return x + y;
+        }
+        var calSum = add;       //함수를 변수에 할당 (자바스크립트에 있는 문법)
+        var addUp = add;
+        document.write("결과 값 : "+ calSum(5,10)+"<br>");
+        document.write("결과 값 : "+ addUp(3,20)+"<br>");
+    </script>
+</body>
+</html>
