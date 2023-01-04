@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{ padding: 20px; margin: 0 auto; width: 100%; height: 800px;}
+
+        #box { margin: 30px 30px 30px 0 ; width: 210px;        }
+        #sec1 ul{list-style-type: none; }
+        #sec1 li{display: inline-block;}
+        #sec1 {float: left;}
+        #sec2 {height: 300px; margin: 0; }
+        table { margin: 60px 0 20px 0; }
+        #blue{font-weight: bolder; color: blue;}
+        #spe{display: block; margin-top: 50px;}
+        #spe a{text-decoration: none;}
+
+    </style>
+</head>
+<body>
+
+        <h1>에디오피아 게뎁</h1>
+        <section id="sec1">
+            <div id="lightbox">
+                <img src="images/coffee-pink.jpg" width="210px" alt = "" id = "lightboxImage">
+            </div>
+            <ul>
+                <li><img src="images/coffee-pink.jpg" width="70px" data-src="images/coffee-pink.jpg" class="pic"></li>
+                <li><img src="images/coffee-blue.jpg" width="70px" data-src="images/coffee-blue.jpg" class="pic"></li>
+                <li><img src="images/coffee-gray.jpg" width="70px" data-src="images/coffee-gray.jpg" class="pic"></li>
+            </ul>
+        </section> 
+            <table>
+                <tr><td>상품명 : </td><td>에디오피아 게뎁</td></tr>
+                <tr id="blue"><td>판매가 : </td><td>9,000원</td></tr>
+                <tr><td>배송비 : </td><td>3,000원</td></tr>
+                <tr><td colspan="2">(50,000원 이상 구매시 무료)</td></tr>
+                <tr><td>적립금 : </td><td>180원(2%)</td></tr>
+                <tr><td>로스팅 : </td><td>2019.06.17</td></tr>
+            </table>
+                 <a href="#"><input type="button" value="장바구니 담기" style="width:300px; height: 50px;"></a>
+            
+            <div id="spe">
+            <a href="#">상세 설명 보기</a>
+            </div>
+        
+</body>
+</html>
+
+<script>
+    // class와 id 속성을 가져와서 변수에 할당.
+    var pics = document.getElementsByClassName("pic");
+    var lightbox = document.getElementById("lightbox"); 
+    var lightboxImage = document.getElementById("lightboxImage");
+
+    // for 루프를 돌리면서 썸네일 클릭 시 showLightbox() 호출
+    for(var i = 0;i<pics.length; i++){
+        pics[i].addEventListener("click",showLightbox);
+            //pics 배열의 i번째 요소를 클릭 시 showLightbox() 함수를 호출
+    }
+    //썸네일 클릭 시 img 태그의 원본 이미지를 적용하는 함수
+    function showLightbox(){
+        var bigLocation = this.getAttribute ("data-src");   // data-src의 값을 가져와서 bigLocation변수에 할당
+        lightboxImage.setAttribute("src", bigLocation)
+       
+    }
+
+
+</script>
