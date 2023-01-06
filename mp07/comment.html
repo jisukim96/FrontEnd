@@ -7,26 +7,37 @@
     <title>Document</title>
     <style>
         #T1,#T2,#T3{display: none;}
+        #B1,#B2,#B3{cursor: pointer;}
+        .question {
+          font-size: 19px;
+          padding: 30px 0;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background: none;
+          width: 100%;
+          text-align: left;
+        }
     </style>
 </head>
 <body>
 
-    <h3 id="B1">+ 'HTML'이란 무엇인가요?</h3>
-    
-    
+    <button class="question" id="Q1"><span onclick="plus()" id="P1">+</span> <span>'HTML'이란 무엇인가요?</span></button>
 
-    <div id="T1">
-        <h3>- 'HTML'이란 무엇인가요?</h3>
-        <p>하이퍼텍스트 마크업 언어(HyperText Markup Language)입니다.</p>
+    <div class="faq-content">
+        <!-- <h3>- 'HTML'이란 무엇인가요?</h3> -->
+        <p id="T1">하이퍼텍스트 마크업 언어(HyperText Markup Language)입니다.</p>
     </div>
     <hr>
-    <h3 id="B2">+ 'CSS'란 무엇인가요?</h3>
+
+    <h3 id="B2" onclick="plus2()">+ 'CSS'란 무엇인가요?</h3>
     <div id="T2">
         <h3>- 'CSS'란 무엇인가요?</h3>
         <p>캐스케이딩 스타일 시트(Cascading Style Sheets)입니다.</p>
     </div>
     <hr>
-    <h3 id="B3">+ 'JavaScript'란 무엇인가요?</h3>
+
+    <h3 id="B3" onclick="plus3()">+ 'JavaScript'란 무엇인가요?</h3>
     <div id="T3">
         <h3>- 'JavaScript'란 무엇인가요?</h3>
         <p>자바스크립트는 객체(Object)를 기초로 하는 스크립트 프로그래밍 언어입니다.</p>
@@ -35,8 +46,17 @@
     <script>
 
         function plus() {
-            // document.getElementById("T1").textContent=
-
+            if(document.getElementById("B1").style.display === 'block'){    
+                document.getElementById("P1").textContent="-";
+                document.getElementById("T1").style.display = 'none';}
+        // if(document.getElementById("list").style.display === 'block'){
+        //         document.getElementById("list").style.display = 'none';
+        //         document.getElementById('toc_toggle').textContent = '보이기';
+      
+        //     }else {
+        //         document.getElementById("list").style.display = 'block';
+        //         document.getElementById('toc_toggle').textContent = '접히기';
+        //     }
         }
     </script>
 </body>
